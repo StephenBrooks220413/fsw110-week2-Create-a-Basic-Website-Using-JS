@@ -30,7 +30,7 @@ function line() {
     line.style.borderWidth = '2px';
 
     document.body.appendChild(line);
-}
+};
 
 function headTag() {
     intro.textContent = "Main Title";
@@ -48,6 +48,19 @@ function image() {
     img.style.marginLeft = '60px';
 
     document.body.appendChild(img);
+}
+
+function list() {
+    var names = ['vitosh','academy','dot','com'];
+		var ul = document.createElement('ul');
+		document.body.appendChild(ul);
+        ul.style.marginLeft = "50px";
+        ul.style.fontSize = "20px";
+		names.forEach(function(name){
+			var li = document.createElement('li');
+			ul.appendChild(li);
+			li.innerHTML += name;
+		});
 }
 
 function paragraph() {
@@ -80,5 +93,6 @@ listTags();
 line();
 headTag();
 image();
+list();
 paragraph();
 footer();
