@@ -14,7 +14,7 @@ function listTags() {
     var a1 = document.createElement('a');
     a1.target = '_blank';
     a1.href = 'https://www.techiedelight.com/';
-    a1.innerText = 'home';
+    a1.innerText = 'techie';
     a1.className = "link";
     var a2 = document.createElement('a');
     a2.target = '_blank';
@@ -40,8 +40,9 @@ function line() {
 }
 
 function headTag() {
-    intro.textContent = "Main Title";
+    intro.textContent = "Stephen Brooks";
     intro.style.textAlign = "center";
+    intro.style.fontSize = "4em";
 
     document.body.appendChild(intro);
 }
