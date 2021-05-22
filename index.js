@@ -4,7 +4,6 @@ var p = document.createElement('p');
 var bottom = document.createElement('footer');
 
 function navItem() {
-    nav.textContent = " Welcome To JavaScript ";
     nav.style.fontSize = '2.8em';
     nav.style.textAlign = 'center';
 
@@ -12,17 +11,25 @@ function navItem() {
 }
 
 function listTags() {
-    var a = document.createElement('a');
-    a.target = '_blank';
-    a.href = 'https://www.techiedelight.com/';
-    a.innerText = 'home ' + ' about ' + ' contact ';
-    a.style.textDecoration = 'none';
-    a.style.fontSize = '20px';
-    a.style.display = 'flex';
-    a.style.justifyContent = 'center';
-    a.style.wordSpacing = '25px';
+    var a1 = document.createElement('a');
+    a1.target = '_blank';
+    a1.href = 'https://www.techiedelight.com/';
+    a1.innerText = 'home';
+    a1.className = "link";
+    var a2 = document.createElement('a');
+    a2.target = '_blank';
+    a2.href = 'https://github.com/';
+    a2.innerText = 'profile';
+    a2.className = "link";
+    var a3 = document.createElement('a');
+    a3.target = '_blank';
+    a3.href = 'https://portfolium.com/stephenbrooks15';
+    a3.innerText = 'Portfolio';
+    a3.className = "link";
 
-    document.body.appendChild(a);
+    nav.appendChild(a1);
+    nav.appendChild(a2);
+    nav.appendChild(a3);
 }
 
 function line() {
@@ -30,7 +37,7 @@ function line() {
     line.style.borderWidth = '2px';
 
     document.body.appendChild(line);
-};
+}
 
 function headTag() {
     intro.textContent = "Main Title";
@@ -95,4 +102,5 @@ headTag();
 image();
 list();
 paragraph();
+
 footer();
